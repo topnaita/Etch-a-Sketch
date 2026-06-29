@@ -1,10 +1,9 @@
 const container = document.querySelector(".container");
 const divElement = document.createElement("div");
+const createDiv = document.querySelector("#createDiv");
 
-// function setColor(event) {
-//   return (divElement.style["backgroundColor"] = "green");
-// }
-divElement.setAttribute("style", "width: 16px; height: 16px");
+divElement.style.width = "16px";
+divElement.style.height = "16px";
 
 divElement.addEventListener("mouseover", () => {
   divElement.style["backgroundColor"] = "green";
