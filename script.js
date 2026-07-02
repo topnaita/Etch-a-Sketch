@@ -1,9 +1,18 @@
 const container = document.querySelector(".container");
 const divElement = document.createElement("div");
-const createDiv = document.querySelector("#createDiv");
+const btnCreateDiv = document.querySelector("#createDiv");
 
-divElement.style.width = "16px";
-divElement.style.height = "16px";
+btnCreateDiv.addEventListener("click", () => {
+  const num = prompt("Insert the amount of squares");
+
+  for (let i = 0; i < num; i++) {
+    if (num > 100) {
+      alert("Do not enter a number grater than 100");
+      break;
+    } else {
+    }
+  }
+});
 
 divElement.addEventListener("mouseover", () => {
   divElement.style["backgroundColor"] = "green";
@@ -12,5 +21,8 @@ divElement.addEventListener("mouseover", () => {
 divElement.addEventListener("mouseout", () => {
   divElement.style["backgroundColor"] = "white";
 });
+
+divElement.style.width = "16px";
+divElement.style.height = "16px";
 
 container.appendChild(divElement);
