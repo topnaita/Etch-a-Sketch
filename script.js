@@ -1,5 +1,4 @@
 const container = document.querySelector(".container");
-const divElement = document.createElement("div");
 const btnCreateDiv = document.querySelector("#createDiv");
 
 btnCreateDiv.addEventListener("click", () => {
@@ -10,19 +9,17 @@ btnCreateDiv.addEventListener("click", () => {
       alert("Do not enter a number grater than 100");
       break;
     } else {
+      const divElement = document.createElement("div");
+      divElement.style.width = "16px";
+      divElement.style.height = "16px";
+      container.appendChild(divElement);
+      divElement.addEventListener("mouseover", () => {
+        divElement.style["backgroundColor"] = "green";
+      });
+
+      divElement.addEventListener("mouseout", () => {
+        divElement.style["backgroundColor"] = "white";
+      });
     }
   }
 });
-
-divElement.addEventListener("mouseover", () => {
-  divElement.style["backgroundColor"] = "green";
-});
-
-divElement.addEventListener("mouseout", () => {
-  divElement.style["backgroundColor"] = "white";
-});
-
-divElement.style.width = "16px";
-divElement.style.height = "16px";
-
-container.appendChild(divElement);
