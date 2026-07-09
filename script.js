@@ -2,24 +2,20 @@ const container = document.querySelector(".container");
 const btnCreateDiv = document.querySelector("#createDiv");
 
 btnCreateDiv.addEventListener("click", () => {
-  const num = prompt("Insert the amount of squares");
+  createDiv();
+}); // Callback btn Create DIV
 
-  for (let i = 0; i < num; i++) {
-    if (num > 100) {
-      alert("Do not enter a number grater than 100");
-      break;
-    } else {
-      const divElement = document.createElement("div");
-      divElement.style.width = "16px";
-      divElement.style.height = "16px";
-      container.appendChild(divElement);
-      divElement.addEventListener("mouseover", () => {
-        divElement.style["backgroundColor"] = "green";
-      });
+function createDiv() {
+  // num = prompt("Insert the amount of squares");
 
-      divElement.addEventListener("mouseout", () => {
-        divElement.style["backgroundColor"] = "white";
-      });
-    }
+  for (let i = 0; i < 256; i++) {
+    const divElement = document.createElement("div");
+    divElement.style.width = "6.25%";
+    divElement.style.height = "6.25%";
+    divElement.style.border = "1px solid #ccc";
+    divElement.style.borderColor = "black";
+    divElement.style.boxSizing = "border-box";
+
+    container.appendChild(divElement);
   }
-});
+}

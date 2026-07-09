@@ -1,10 +1,12 @@
 .container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   width: 500px;
   height: 500px;
+  /* max-width: 100%;
+  max-height: 100%; */
   border-color: black;
   background-color: antiquewhite;
   border: solid;
-  flex-wrap: wrap;
 }
