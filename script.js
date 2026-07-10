@@ -16,6 +16,10 @@ function createDiv() {
     divElement.style.borderColor = "black";
     divElement.style.boxSizing = "border-box";
 
+    divElement.addEventListener("mouseover", () => {
+      divElement.style.backgroundColor = "green";
+    });
+
     container.appendChild(divElement);
   }
 }
