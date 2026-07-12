@@ -5,11 +5,12 @@ btnCreateDiv.addEventListener("click", () => {
   createDiv();
 }); // Callback btn Create DIV
 
+//logic
 function createDiv() {
   let num = prompt("Insert the amount of squares");
   let pixel = num * num;
-  let percentStyle = 100 / num;
-
+  let percentStyle = 100 / num; // This will specify the percentage % of the squares will grow
+  container.replaceChildren(); // This will replacement all children container to prevent overflow
   for (let i = 0; i < `${pixel}`; i++) {
     if (num > 100) {
       alert("Please DO NOT enter a number greater than 100");
@@ -25,7 +26,7 @@ function createDiv() {
     divElement.style.boxSizing = "border-box";
 
     divElement.addEventListener("mouseover", () => {
-      divElement.style.backgroundColor = "green";
+      divElement.style.backgroundColor = "black";
     });
 
     container.appendChild(divElement);
