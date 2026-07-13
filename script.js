@@ -2,9 +2,7 @@ const container = document.querySelector(".container");
 const btnCreateDiv = document.querySelector("#createDiv");
 const btnDeleteDiv = document.querySelector("#deleteDiv");
 
-btnCreateDiv.addEventListener("click", () => {
-  createDiv();
-}); // Callback btn Create DIV
+btnCreateDiv.addEventListener("click", createDiv); // Callback btn Create DIV
 
 btnDeleteDiv.addEventListener("click", () => {
   container.replaceChildren();
