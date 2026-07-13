@@ -1,7 +1,8 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  /* justify-content: center; */
+  /* flex-direction: column; */
   width: 500px;
   height: 500px;
 
@@ -10,4 +11,35 @@
   border-color: black;
   background-color: antiquewhite;
   border: solid;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 750px;
+  height: 550px;
+  background-color: gray;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+#centerContainer {
+  display: flex;
+  justify-content: center;
+  margin-left: 25px;
+}
+
+#createDiv,
+#deleteDiv {
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
