@@ -5,6 +5,7 @@ const btnDeleteDiv = document.querySelector("#deleteDiv");
 btnCreateDiv.addEventListener("click", createDiv); // Callback createDiv btnCreateDIV
 
 btnDeleteDiv.addEventListener("click", () => {
+  // logic of the reset button
   container.replaceChildren();
 });
 

@@ -34,12 +34,6 @@ body {
   border-radius: 10px;
 }
 
-#centerContainer {
-  display: flex;
-  justify-content: center;
-  margin-left: 25px;
-}
-
 #createDiv,
 #deleteDiv {
   padding: 10px 10px;
